@@ -82,7 +82,7 @@ class Player(Person):
 		self.uv_years = 0
 		self.reset_already_did()
 		self.passed_out = False
-		self.grades = None
+		self.grades = 0
 		self.dropped_out = False
 		self.teen_looks_inc = 0
 		
