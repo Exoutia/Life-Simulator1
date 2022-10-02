@@ -81,12 +81,13 @@ class Player(Person):
 		self.chose_student_loan = False
 		self.uv_years = 0
 		self.reset_already_did()
+		self.passed_out = False
 		self.grades = None
 		self.dropped_out = False
 		self.teen_looks_inc = 0
 		
 	def is_in_school(self):
-		return self.is_in_school()
+	   	return not self.passed_out or self.dropped_out
 
 	def change_grades(self, amount):
 		if self.is_in_school():
